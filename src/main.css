@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --detail-2: #114b5fff;
+    --detail-1: #1a936fff;
+    --background-3: #88d498ff;
+    --background-2: #c6dabfff;
+    --background-1: #f3e9d2ff;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--background-1);
+    color: var(--detail-2);
+    font-size: 40px;
+    font-family: sans-serif;
+    padding: 10vh;
+}
