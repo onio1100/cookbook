@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Shrikhand&display=swap');
+/* FONTS
+font-family: 'Open Sans', sans-serif; 400, 500, 600, 700, 800   
+font-family: 'Shrikhand', serif; 400 */
 *{
     margin: 0;
     padding: 0;
@@ -23,7 +27,6 @@
 /* nav */
 .nav{
     width: 100%;
-    /* width: calc(1440px + ((100% - 1440px) / 2)) ; */
     position: fixed;
     right: 0;
     top: 0;
@@ -41,21 +44,21 @@
     align-items: center;
     transition: 0.2s;
     z-index: 15;
+    color: var(--detail-2);
+    font-family: 'Shrikhand', serif;
 }
 .logo--big{
     font-size: 140px;
     width: 1440px;
     height: 200px;
     top: 0;
-    left: 0;
-    color: var(--detail-1);
+    padding-left: calc(100% - (1440px + ((100% - 1440px) / 2)));
 }
 .logo--small{
     font-size: 40px;
     height: 100%;
     width: auto;
     padding-left: 10px;
-    color: var(--detail-2);
 }
 .menu-background{
     width: calc(1440px + ((100% - 1440px) / 2)) ;
@@ -64,10 +67,7 @@
     bottom: 0;
     display: flex;
     background-color: var(--background-3);
-    /* transition: 1s; */
-    /* transition-duration: 100s; */
-    transition: all 1s;
-    /* transition-timing-function: step-start; */
+    transition: 0.2s;
     z-index: 10;
 }
 .menu-background--big{
@@ -76,7 +76,7 @@
 }
 .menu-background--small{
     justify-content: flex-end;
-    right: calc(-(1440px + ((100% - 1440px) / 2)));
+    right: calc(100% - (1440px + ((100% - 1440px) / 2)));
 }
 .menu{
     width: 1440px;
@@ -87,11 +87,28 @@
     list-style: none;
 }
 .outlet-wraper{
-    margin-top: 300px;
+    margin-top: 150px;
 }
 /* home */
 .home{
     width: calc(1440px + ((100% - 1440px) / 2));
     min-height: 400vh;
     background-color: var(--background-2);
+}
+.menu-element{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: var(--detail-2);
+    font-size: 20px;
+    transition: 0.1s;
+    cursor: pointer;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.menu-element:hover{
+    /* font-weight: 800; */
+    /* font-size: 22px; */
 }
